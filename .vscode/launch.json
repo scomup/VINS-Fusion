@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "launch_cpp",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/liu/catkin_ws/devel/lib/vins/vins_node",
+            "args": ["/home/liu/catkin_ws/src/VINS-Fusion/config/oak/oak_stereo_imu_config.yaml"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "gdb の再フォーマットを有効にする",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
