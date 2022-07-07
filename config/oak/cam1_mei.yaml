@@ -1,0 +1,22 @@
+%YAML:1.0
+
+#common parameters
+imu_topic: "/imu_msgs"
+image_topic: "/stereo_camera/left/image_raw"
+output_path: "/home/shaozu/output/"
+
+#camera calibration 
+model_type: PINHOLE
+camera_name: camera
+image_width: 640
+image_height: 480
+distortion_parameters:
+   k1: 0
+   k2: 0
+   p1: 0
+   p2: 0
+projection_parameters:
+   fx: 381.36246688113556
+   fy: 381.36246688113556
+   cx: 320.5
+   cy: 240.5
